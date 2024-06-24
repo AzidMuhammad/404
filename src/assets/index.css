@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    background-color: #0c0c0f !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+  }
+  
