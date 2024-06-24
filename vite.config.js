@@ -17,7 +17,17 @@ export default defineConfig({
 ],
   optimizeDeps: {
     include: ['parallax-js'],
-  },  
+  },
+    build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  server: {
+    historyApiFallback: true,
+  },
   resolve: {
     alias: {
       '@' : fileURLToPath(new URL('./src', import.meta.url))
